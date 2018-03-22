@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeAlarmHistory&k=1:
+  /?Action=DescribeAlarmHistory:
     "":
       summary: Describe Alarm History
       description: Retrieves the history for the specified alarm
