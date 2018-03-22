@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteAlarms&k=1:
+  /?Action=DeleteAlarms:
     "":
       summary: Delete Alarms
       description: Deletes the specified alarms
