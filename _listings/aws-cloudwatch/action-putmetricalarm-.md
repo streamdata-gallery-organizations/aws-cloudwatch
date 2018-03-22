@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=PutMetricAlarm&k=1:
+  /?Action=PutMetricAlarm:
     "":
       summary: Put Metric Alarm
       description: Creates or updates an alarm and associates it with the specified
