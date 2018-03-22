@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=SetAlarmState&k=1:
+  /?Action=SetAlarmState:
     "":
       summary: Set Alarm State
       description: Temporarily sets the state of an alarm for testing purposes
