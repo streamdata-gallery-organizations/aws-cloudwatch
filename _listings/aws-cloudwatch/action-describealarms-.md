@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeAlarms&k=1:
+  /?Action=DescribeAlarms:
     "":
       summary: Describe Alarms
       description: Retrieves the specified alarms
