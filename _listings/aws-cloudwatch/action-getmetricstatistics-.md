@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetMetricStatistics&k=1:
+  /?Action=GetMetricStatistics:
     "":
       summary: Get Metric Statistics
       description: Gets statistics for the specified metric
