@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=EnableAlarmActions&k=1:
+  /?Action=EnableAlarmActions:
     "":
       summary: Enable Alarm Actions
       description: Enables the actions for the specified alarms
