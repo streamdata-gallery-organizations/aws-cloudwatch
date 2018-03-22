@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListMetrics&k=1:
+  /?Action=ListMetrics:
     "":
       summary: List Metrics
       description: List the specified metrics
