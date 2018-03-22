@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=PutMetricData&k=1:
+  /?Action=PutMetricData:
     "":
       summary: Put Metric Data
       description: Publishes metric data points to Amazon CloudWatch
