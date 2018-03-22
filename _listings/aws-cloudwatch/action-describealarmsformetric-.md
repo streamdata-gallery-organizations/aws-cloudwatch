@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeAlarmsForMetric&k=1:
+  /?Action=DescribeAlarmsForMetric:
     "":
       summary: Describe Alarms For Metric
       description: Retrieves the alarms for the specified metric
