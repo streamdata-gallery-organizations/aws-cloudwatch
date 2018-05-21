@@ -1,5 +1,6 @@
 ---
 name: AWS CloudWatch
+x-slug: aws-cloudwatch
 description: Amazon CloudWatch is a monitoring service for AWS cloud resources and
   the applications you run on AWS. You can use Amazon CloudWatch to collect and track
   metrics, collect and monitor log files, set alarms, and automatically react to changes
@@ -12,34 +13,153 @@ description: Amazon CloudWatch is a monitoring service for AWS cloud resources a
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
 x-kinRank: "10"
 x-alexaRank: ""
-tags:
-- Stack Network
-- Monitoring
-- Management
-- Logging
-- Analysis
-- Amazon Web Services
-created: "2018-03-24"
-modified: "2018-03-24"
-url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/apis.yaml
+tags: AWS CloudWatch
+created: "2018-05-20"
+modified: "2018-05-20"
+url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Amazon CloudWatch API
-  description: Amazon CloudWatch is a monitoring service for AWS cloud resources and
-    the applications you run on AWS
+- name: Amazon CloudWatch API Delete Alarms
+  x-api-slug: amazon-cloudwatch-api
+  description: Deletes the specified alarms.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
-  humanURL: ""
-  baseURL: :///
-  tags:
-  - Stack Network
-  - Monitoring
-  - Management
-  - Logging
-  - Analysis
-  - Amazon Web Services
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=DeleteAlarms
+  tags: Alarms
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/action-setalarmstate-.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondeletealarms--openapi.md
+- name: Amazon CloudWatch API Describe Alarm History
+  x-api-slug: amazon-cloudwatch-api
+  description: Retrieves the history for the specified alarm.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=DescribeAlarmHistory
+  tags: Alarm History
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondescribealarmhistory--postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondescribealarmhistory--openapi.md
+- name: Amazon CloudWatch API Describe Alarms
+  x-api-slug: amazon-cloudwatch-api
+  description: Retrieves the specified alarms.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=DescribeAlarms
+  tags: Alarms
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondescribealarms--openapi.md
+- name: Amazon CloudWatch API Describe Alarms For Metric
+  x-api-slug: amazon-cloudwatch-api
+  description: Retrieves the alarms for the specified metric.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=DescribeAlarmsForMetric
+  tags: Alarm Metrics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondescribealarmsformetric--openapi.md
+- name: Amazon CloudWatch API Disable Alarm Actions
+  x-api-slug: amazon-cloudwatch-api
+  description: Disables the actions for the specified alarms.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=DisableAlarmActions
+  tags: Alarm Actions
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondisablealarmactions--postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiondisablealarmactions--openapi.md
+- name: Amazon CloudWatch API Enable Alarm Actions
+  x-api-slug: amazon-cloudwatch-api
+  description: Enables the actions for the specified alarms.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=EnableAlarmActions
+  tags: Alarm Actions
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionenablealarmactions--postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionenablealarmactions--openapi.md
+- name: Amazon CloudWatch API Get Metric Statistics
+  x-api-slug: amazon-cloudwatch-api
+  description: Gets statistics for the specified metric.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=GetMetricStatistics
+  tags: Metric Statistics
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiongetmetricstatistics--postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actiongetmetricstatistics--openapi.md
+- name: Amazon CloudWatch API List Metrics
+  x-api-slug: amazon-cloudwatch-api
+  description: List the specified metrics.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=ListMetrics
+  tags: Metrics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionlistmetrics--openapi.md
+- name: Amazon CloudWatch API Put Metric Alarm
+  x-api-slug: amazon-cloudwatch-api
+  description: Creates or updates an alarm and associates it with the specified metric.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=PutMetricAlarm
+  tags: Alarm Metric
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionputmetricalarm--postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionputmetricalarm--openapi.md
+- name: Amazon CloudWatch API Put Metric Data
+  x-api-slug: amazon-cloudwatch-api
+  description: Publishes metric data points to Amazon CloudWatch.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=PutMetricData
+  tags: Data Metric
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionputmetricdata--openapi.md
+- name: Amazon CloudWatch API Set Alarm State
+  x-api-slug: amazon-cloudwatch-api
+  description: Temporarily sets the state of an alarm for testing purposes.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: ://///?Action=SetAlarmState
+  tags: Aler State
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionsetalarmstate--postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/actionsetalarmstate--openapi.md
+- name: Amazon CloudWatch API
+  x-api-slug: amazon-cloudwatch-api
+  description: Amazon CloudWatch is a monitoring service for AWS cloud resources and
+    the applications you run on AWS. You can use Amazon CloudWatch to collect and
+    track metrics, collect and monitor log files, set alarms, and automatically react
+    to changes in your AWS resources. Amazon CloudWatch can monitor AWS resources
+    such as Amazon EC2 instances, Amazon DynamoDB tables, and Amazon RDS DB instances,
+    as well as custom metrics generated by your applications and services, and any
+    log files your applications generate. You can use Amazon CloudWatch to gain system-wide
+    visibility into resource utilization, application performance, and operational
+    health. You can use these insights to react and keep your application running
+    smoothly.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
+  humanURL: https://aws.amazon.com/cloudwatch/
+  baseURL: :///
+  tags: AWS CloudWatch
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/openapi.md
 x-common:
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
