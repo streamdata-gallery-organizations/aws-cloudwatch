@@ -54,8 +54,8 @@ paths:
         type: string
       - in: query
         name: NextToken
-        description: "The token returned by a previous call to indicate that there
-          is more data\t\t\tavailable"
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
         type: string
       - in: query
         name: StartDate
@@ -91,8 +91,8 @@ paths:
         type: string
       - in: query
         name: NextToken
-        description: "The token returned by a previous call to indicate that there
-          is more data\t\t\tavailable"
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
         type: string
       - in: query
         name: StateValue
@@ -244,8 +244,8 @@ paths:
         type: string
       - in: query
         name: NextToken
-        description: "The token returned by a previous call to indicate that there
-          is more data\t\t\tavailable"
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
         type: string
       responses:
         200:

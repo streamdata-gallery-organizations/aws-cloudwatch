@@ -12,10 +12,10 @@ description: Amazon CloudWatch is a monitoring service for AWS cloud resources a
   insights to react and keep your application running smoothly.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
 x-kinRank: "10"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: AWS CloudWatch
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-cloudwatch/master/_listings/aws-cloudwatch/apis.md
 specificationVersion: "0.14"
 apis:

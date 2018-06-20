@@ -53,8 +53,8 @@ paths:
         type: string
       - in: query
         name: NextToken
-        description: "The token returned by a previous call to indicate that there
-          is more data\t\t\tavailable"
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
         type: string
       - in: query
         name: StartDate
@@ -90,8 +90,8 @@ paths:
         type: string
       - in: query
         name: NextToken
-        description: "The token returned by a previous call to indicate that there
-          is more data\t\t\tavailable"
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
         type: string
       - in: query
         name: StateValue
@@ -243,8 +243,8 @@ paths:
         type: string
       - in: query
         name: NextToken
-        description: "The token returned by a previous call to indicate that there
-          is more data\t\t\tavailable"
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
         type: string
       responses:
         200:
@@ -279,8 +279,8 @@ paths:
         type: string
       - in: query
         name: ComparisonOperator
-        description: "The arithmetic operation to use when comparing the specified
-          statistic and\t\t\tthreshold"
+        description: The arithmetic operation to use when comparing the specified
+          statistic andthreshold
         type: string
       - in: query
         name: Dimensions.member.N
@@ -288,7 +288,7 @@ paths:
         type: string
       - in: query
         name: EvaluationPeriods
-        description: "The number of periods over which data is compared to the specified\t\t\tthreshold"
+        description: The number of periods over which data is compared to the specifiedthreshold
         type: string
       - in: query
         name: ExtendedStatistic
@@ -309,8 +309,8 @@ paths:
         type: string
       - in: query
         name: OKActions.member.N
-        description: "The actions to execute when this alarm transitions to an OK
-          state\t\t\tfrom any other state"
+        description: The actions to execute when this alarm transitions to an OK statefrom
+          any other state
         type: string
       - in: query
         name: Period
